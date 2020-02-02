@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+ /*
+ *Magento2 event name for front-end pages
+ *If you want to captures the HTML from the response, you can declare this event
+ *Event name: controller_front_send_response_before
+ File: vendor/magento/framework/App/Http.php
+
+ *Event name: controller_action_layout_render_before
+ File: vendor/magento/framework/App/View.php
+
+ *Event name: controller_action_layout_render_before
+ File: vendor/magento/framework/App/View.php
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+	<event name="controller_front_send_response_before">
+		<observer name="loadcss" instance="Pinpoint\Loadcss\Observer\Loadcss"/>
+	</event>
+</config>

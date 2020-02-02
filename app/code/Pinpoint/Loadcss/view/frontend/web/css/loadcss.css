@@ -1,0 +1,11 @@
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+/*
+*If a user is logged in then this css file will load and changes the search
+input background to an orange colour.
+*/
+input#search {
+    background: orange !important;
+}
